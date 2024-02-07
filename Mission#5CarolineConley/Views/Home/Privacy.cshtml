@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Skiing Tutor Calculator";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/png" href="~/favicon.ico"> <!-- Custom icon -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery library -->
+    <script src="~/js/skiingCalculator.js"></script> <!-- JavaScript file for calculation -->
+</head>
+<body>
+
+    <header>
+        <h1>Skiing Tutor Price Calculator</h1> <!-- Heading introducing the calculator -->
+    </header>
+
+    <main>
+        <section>
+            <label for="hours">Enter Number of Hours:</label>
+            <input type="number" id="hours">
+            <br />
+            <br />
+            <input type="text" readonly value="My tutoring rate: $50 per hour" size="30"></p> <!-- Display tutoring rate -->
+            <button id="calculate">Calculate Total</button>
+            <br /> 
+            <br />
+            <p>Total Cost: <span id="total"></span></p> <!-- Output box for total -->
+           
+            
+
+        </section>
+    </main>
+
+   
+</body>
+</html>
+
