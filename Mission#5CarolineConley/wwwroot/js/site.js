@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#calculate').click(function () {
         var hours = parseInt($('#hours').val());
         if (!isNaN(hours) && hours > 0) {
-            var rate = 50; // Your tutoring rate per hour
+            var rate = 50; // my tutoring rate per hour
             var total = hours * rate;
             $('#total').text('$' + total.toFixed(2));
         } else {
